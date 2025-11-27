@@ -1,0 +1,62 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id            String    @id @default(cuid())
+  username      String    @unique
+  email         String    @unique
+  password_hash String
+  role          String    @default("admin")
+  created_at    DateTime  @default(now())
+  updated_at    DateTime  @updatedAt
+  
+  @@map("users")
+}
+
+model PrayerTime {
+  id           String    @id @default(cuid())
+  prayer_date  DateTime  @unique
+  fajr         String
+  sunrise      String
+  dhuhr        String
+  asr          String
+  maghrib      String
+  isha         String
+  location     String    @default("Jakarta")
+  source       String    @default("kemenag")
+  created_at   DateTime  @default(now())
+  
+  @@map("prayer_times")
+  @@index([prayer_date])
+  @@index([location])
+}
+
+model Setting {
+  id          String    @id @default(cuid())
+  setting_key String    @unique
+  setting_value String?
+  description String?
+  updated_at  DateTime  @updatedAt
+  
+  @@map("settings")
+}
+
+model IqomahTime {
+  id               String    @id @default(cuid())
+  prayer_date      DateTime
+  prayer_name      String
+  iqomah_duration  Int       @default(10)
+  is_active        Boolean   @default(true)
+  created_at       DateTime  @default(now())
+  
+  @@unique([prayer_date, prayer_name])
+  @@map("iqomah_times")
+  @@index([prayer_date])
+  @@index([is_active])
+}
