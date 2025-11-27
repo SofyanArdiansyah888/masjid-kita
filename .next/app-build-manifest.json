@@ -1,25 +1,61 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+    "/_not-found/page": [
+      "static/chunks/webpack-4772d34723bd25e0.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-cf2e1d3491ac955b.js",
+      "static/chunks/main-app-6c7d1eacb5d8bd1f.js",
+      "static/chunks/app/_not-found/page-d60c289ff4e02863.js"
     ],
     "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/webpack-4772d34723bd25e0.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-cf2e1d3491ac955b.js",
+      "static/chunks/main-app-6c7d1eacb5d8bd1f.js",
+      "static/css/0e86d698051f50be.css",
+      "static/chunks/app/layout-a71831c8a0bb9588.js"
+    ],
+    "/admin/login/page": [
+      "static/chunks/webpack-4772d34723bd25e0.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-cf2e1d3491ac955b.js",
+      "static/chunks/main-app-6c7d1eacb5d8bd1f.js",
+      "static/chunks/app/admin/login/page-ff9db899208c2bb3.js"
+    ],
+    "/admin/page": [
+      "static/chunks/webpack-4772d34723bd25e0.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-cf2e1d3491ac955b.js",
+      "static/chunks/main-app-6c7d1eacb5d8bd1f.js",
+      "static/chunks/app/admin/page-0dabef4258490361.js"
     ],
     "/iqomah/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/iqomah/page.js"
+      "static/chunks/webpack-4772d34723bd25e0.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-cf2e1d3491ac955b.js",
+      "static/chunks/main-app-6c7d1eacb5d8bd1f.js",
+      "static/chunks/app/iqomah/page-2ad278f592be20c5.js"
     ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+    "/jadwal/page": [
+      "static/chunks/webpack-4772d34723bd25e0.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-cf2e1d3491ac955b.js",
+      "static/chunks/main-app-6c7d1eacb5d8bd1f.js",
+      "static/chunks/app/jadwal/page-d69540669a419408.js"
+    ],
+    "/iqomah/settings/page": [
+      "static/chunks/webpack-4772d34723bd25e0.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-cf2e1d3491ac955b.js",
+      "static/chunks/main-app-6c7d1eacb5d8bd1f.js",
+      "static/chunks/app/iqomah/settings/page-525bd8e2d178e297.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-4772d34723bd25e0.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-cf2e1d3491ac955b.js",
+      "static/chunks/main-app-6c7d1eacb5d8bd1f.js",
+      "static/chunks/app/page-f47082ca351a8369.js"
     ]
   }
 }

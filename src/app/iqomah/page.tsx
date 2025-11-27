@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { Timer } from 'lucide-react'
 
@@ -10,7 +10,7 @@ function formatTime(totalSeconds: number) {
   return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`
 }
 
-export default function IqomahTimer() {
+function IqomahTimerInner() {
   const params = useSearchParams()
   const defaultMinutes = Number(params.get('duration') ?? '10')
   const defaultPrayer = params.get('prayer') ?? 'dhuhr'
@@ -85,5 +85,13 @@ export default function IqomahTimer() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function IqomahTimer() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-gray-600">Memuat...</div>}>
+      <IqomahTimerInner />
+    </Suspense>
   )
 }
