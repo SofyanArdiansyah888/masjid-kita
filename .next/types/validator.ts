@@ -54,6 +54,24 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../src/app/iqomah/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/iqomah">> = Specific
+  const handler = {} as typeof import("../../src/app/iqomah/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/iqomah/settings/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/iqomah/settings">> = Specific
+  const handler = {} as typeof import("../../src/app/iqomah/settings/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../src/app/jadwal/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/jadwal">> = Specific

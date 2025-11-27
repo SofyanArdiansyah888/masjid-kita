@@ -111,7 +111,7 @@ export default function Home() {
             Navigasi
           </h2>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-xl mx-auto">
             <a
               href="/jadwal"
               className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors text-center"
@@ -123,6 +123,18 @@ export default function Home() {
               className="bg-gray-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors text-center"
             >
               Dashboard Admin
+            </a>
+            <a
+              href="/iqomah?duration=10&prayer=dhuhr"
+              className="bg-yellow-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors text-center"
+            >
+              Timer Iqomah
+            </a>
+            <a
+              href="/iqomah/settings"
+              className="bg-green-50 text-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-green-100 border border-green-200 transition-colors text-center"
+            >
+              Pengaturan Iqomah
             </a>
           </div>
         </div>
